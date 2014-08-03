@@ -21,6 +21,20 @@ set smartcase " no ignore case if Uppercase char present
 set backspace=indent,eol,start " make that backspace key work the way it should
 
 syntax on " turn syntax highlighting on by default
-filetype on " detect type of file
-filetype indent on " load indent file for specific file type
+
+filetype off " detect type of file
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" "call vundle#begin('~/some/path/here')
+"
+" " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'wting/rust.vim'
+Plugin 'ekalinin/Dockerfile.vim'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
 filetype plugin indent on " from Pathogen readme
+filetype indent on " load indent file for specific file type
