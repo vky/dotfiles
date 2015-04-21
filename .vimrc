@@ -12,6 +12,17 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'ekalinin/Dockerfile.vim'
 
+" Ruby & Rails plugins
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-rails'
+
+" Other utilities
+" For aligning text neatly
+Plugin 'godlygeek/tabular'
+" Matching ruby do/end, if/end and such
+Plugin 'vim-scripts/matchit.zip'
+
 " Track the engine.
 Plugin 'SirVer/ultisnips'
 
